@@ -1,0 +1,84 @@
+.profile {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .profileImg {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        border-radius: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            margin-top: 0px !important;
+        }
+    }
+
+    span {
+        margin-left: 8px;
+    }
+}
+
+.q {
+    position: relative;
+    padding: 16px;
+    border: 2px solid #009ee3;
+    border-radius: 6px;
+    text-align: center;
+
+    .name {
+        color: #009ee3;
+
+        span {
+            color: var(--textGray);
+        }
+    }
+
+    .text {
+        display: block;
+        margin-top: 8px;
+        color: #333;
+        color: var(--textBlack);
+        white-space: pre-wrap;
+    }
+}
+
+.buttonShare {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        border: 0;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 14px;
+
+        svg {
+            width: 14px;
+            margin-right: 6px;
+        }
+    }
+
+    .buttonTwitter {
+        background-color: #1da1f2;
+        padding: 8px 16px;
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .buttonCopy {
+        background-color: #5f7fff;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}

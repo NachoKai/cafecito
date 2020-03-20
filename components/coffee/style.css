@@ -1,0 +1,118 @@
+.coffeeContainer {
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.coffeeContainer:last-of-type {
+  padding-bottom: 16px;
+}
+
+.coffeeContainer .coffee {
+  background-color: var(--boxBackground);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  position: relative;
+}
+
+.coffeeContainer .shareIcon {
+  font-size: 22px;
+  color: #006693;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px;
+  cursor: pointer;
+  z-index: 1;
+  width: 20px;
+}
+
+.coffeeContainer .q {
+  position: relative;
+  padding: 8px;
+  padding-left: 0;
+}
+
+.coffeeContainer .q .name {
+  padding-left: 16px;
+  color: #009ee3;
+}
+
+.coffeeContainer .q .name span {
+  color: var(--textGray);
+}
+
+.coffeeContainer .q .text {
+  display: block;
+  margin-top: 8px;
+  padding-left: 16px;
+  color: #333;
+  color: var(--textBlack);
+  white-space: pre-wrap;
+}
+
+.coffeeContainer .q:before {
+  content: "";
+  width: 3px;
+  background-color: #009ee3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.coffeeContainer .answer {
+  margin-top: 16px;
+  color: var(--textBlack);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.coffeeContainer .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coffeeContainer .buttons button:first-child {
+  margin-right: 10px;
+}
+
+.coffeeContainer .dangerButton {
+  width: 40%;
+  color: #570011;
+  background-color: #e64c41;
+}
+
+.coffeeContainer button {
+  padding: 8px 32px;
+  font-size: 16px;
+  border: 0;
+  background-color: var(--buttonBackground);
+  color: var(--buttonText);
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.coffeeContainer textarea {
+  background-color: var(--inputBackground);
+  color: var(--textBlack);
+  border-radius: 4px;
+  border: 0;
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .coffeeContainer {
+    width: 700px;
+    margin: 0 auto;
+  }
+}

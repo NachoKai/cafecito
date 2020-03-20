@@ -1,0 +1,9 @@
+.qrContainer {
+  width: 100%;
+}
+
+.qrContainer img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 6px;
+}

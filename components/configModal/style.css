@@ -1,0 +1,67 @@
+.optionButton {
+  padding: 8px 32px;
+  font-size: 16px;
+  border: 0;
+  background-color: var(--buttonBackground);
+  color: var(--buttonText);
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--inputBackground);
+  border: 0;
+  font-size: 16px;
+  padding: 14px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: var(--textBlack);
+}
+
+.input::-webkit-input-placeholder {
+  color: #969696;
+}
+
+.input:-ms-input-placeholder {
+  color: #969696;
+}
+
+.input::-ms-input-placeholder {
+  color: #969696;
+}
+
+.input::placeholder {
+  color: #969696;
+}
+
+.buttonSubmit {
+  padding: 8px 32px;
+  font-size: 16px;
+  border: 0;
+  background-color: var(--buttonBackground);
+  color: var(--buttonText);
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.configTitle {
+  display: inline-block;
+  font-size: 20px;
+  margin: 6px 0px 10px 0px;
+}
+
+.arrowLeft {
+  display: inline-block;
+  color: var(--textGray);
+  margin-right: 14px;
+  margin-bottom: -4px;
+  cursor: pointer;
+}

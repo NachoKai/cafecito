@@ -1,0 +1,63 @@
+@import "./variables.scss";
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/static/fonts/ProximaNovaThin.otf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/static/fonts/ProximaNovaRegular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/static/fonts/ProximaNovaBold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+* {
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto,
+        Arial, sans-serif;
+}
+
+:root {
+    --background: #{$backgroundLight};
+    --boxBackground: #{$boxBackgroundLight};
+    --textBlack: #{$textBlackLight};
+    --textGray: #{$textGrayLight};
+    --textBlue: #{$textBlueLight};
+    --inputBackground: #{$inputBackgroundLight};
+    --buttonBackground: #{$buttonBackgroundLight};
+    --buttonText: #{$buttonTextLight};
+    --borderButton: #{$borderButtonLight};
+
+    body[data-theme="dark"] {
+        --background: #{$backgroundDark};
+        --boxBackground: #{$boxBackgroundDark};
+        --textBlack: #{$textBlackDark};
+        --textGray: #{$textGrayDark};
+        --textBlue: #{$textBlueDark};
+        --inputBackground: #{$inputBackgroundDark};
+        --buttonBackground: #{$buttonBackgroundDark};
+        --buttonText: #{$buttonTextDark};
+        --borderButton: #{$borderButtonDark};
+    }
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: var(--background);
+}
+
+* {
+    outline: none;
+}

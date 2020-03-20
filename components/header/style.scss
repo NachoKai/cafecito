@@ -1,0 +1,78 @@
+.headerContainer {
+    padding: 16px;
+
+    .header,
+    .twitter {
+        background-color: var(--boxBackground);
+        border-radius: 6px 6px 0 0;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+        padding: 16px;
+    }
+
+    .twitter {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 6px 6px;
+        text-align: center;
+        font-size: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header {
+        display: flex;
+        position: relative;
+
+        .darkMode {
+            font-size: 22px;
+            color: #006693;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 16px;
+            cursor: pointer;
+            width: 22px;
+        }
+    }
+
+    .profileImg {
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .informationContainer {
+        margin-left: 16px;
+
+        .name {
+            text-align: left;
+            display: inline-block;
+            font-size: 22px;
+            color: var(--textBlack);
+        }
+
+        .gear {
+            margin-left: 10px;
+            margin-bottom: -2px;
+            color: var(--textGray);
+            cursor: pointer;
+        }
+
+        .countCoffees {
+            font-size: 16px;
+            color: var(--textGray);
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 700px;
+        margin: 0 auto;
+    }
+}

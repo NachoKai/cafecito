@@ -1,0 +1,84 @@
+.headerContainer {
+  padding: 16px;
+}
+
+.headerContainer .header,
+.headerContainer .twitter {
+  background-color: var(--boxBackground);
+  border-radius: 6px 6px 0 0;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.headerContainer .twitter {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 6px 6px;
+  text-align: center;
+  font-size: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.headerContainer .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.headerContainer .header .darkMode {
+  font-size: 22px;
+  color: #006693;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px;
+  cursor: pointer;
+  width: 22px;
+}
+
+.headerContainer .profileImg {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.headerContainer .profileImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.headerContainer .informationContainer {
+  margin-left: 16px;
+}
+
+.headerContainer .informationContainer .name {
+  text-align: left;
+  display: inline-block;
+  font-size: 22px;
+  color: var(--textBlack);
+}
+
+.headerContainer .informationContainer .gear {
+  margin-left: 10px;
+  margin-bottom: -2px;
+  color: var(--textGray);
+  cursor: pointer;
+}
+
+.headerContainer .informationContainer .countCoffees {
+  font-size: 16px;
+  color: var(--textGray);
+}
+
+@media only screen and (min-width: 768px) {
+  .headerContainer {
+    width: 700px;
+    margin: 0 auto;
+  }
+}

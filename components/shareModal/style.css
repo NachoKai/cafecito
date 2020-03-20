@@ -1,0 +1,105 @@
+.profile {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .profileImg {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.profile .profileImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 0px !important;
+}
+
+.profile span {
+  margin-left: 8px;
+}
+
+.q {
+  position: relative;
+  padding: 16px;
+  border: 2px solid #009ee3;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.q .name {
+  color: #009ee3;
+}
+
+.q .name span {
+  color: var(--textGray);
+}
+
+.q .text {
+  display: block;
+  margin-top: 8px;
+  color: #333;
+  color: var(--textBlack);
+  white-space: pre-wrap;
+}
+
+.buttonShare {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonShare button {
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.buttonShare button svg {
+  width: 14px;
+  margin-right: 6px;
+}
+
+.buttonShare .buttonTwitter {
+  background-color: #1da1f2;
+  padding: 8px 16px;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.buttonShare .buttonCopy {
+  background-color: #5f7fff;
+  padding: 8px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}

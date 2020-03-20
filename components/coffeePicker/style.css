@@ -1,0 +1,68 @@
+.controlsContainer {
+  padding: 25px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.controlsContainer input {
+  width: 80px;
+  text-align: center;
+  font-size: 25px;
+  color: var(--textBlack);
+  background-color: var(--inputBackground);
+  border: 1px solid var(--borderButton);
+  border-radius: 8px;
+}
+
+.controlsContainer .leftControl,
+.controlsContainer .rightControl {
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  color: var(--buttonText);
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  background-color: var(--buttonBackground);
+  border: 1px solid var(--borderButton);
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.controlsContainer .leftControl img,
+.controlsContainer .rightControl img {
+  vertical-align: middle;
+}
+
+.controlsContainer .leftControl:active,
+.controlsContainer .rightControl:active {
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
+}
+
+.controlsContainer .leftControl {
+  margin-right: 40px;
+}
+
+.controlsContainer .leftControl img {
+  margin-top: -2px;
+}
+
+.controlsContainer .rightControl {
+  margin-left: 40px;
+}
+
+.controlsContainer .rightControl img {
+  margin-top: -4px;
+}
