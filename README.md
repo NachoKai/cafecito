@@ -1,8 +1,8 @@
-# Cafecito | Nacho Caiafa
+# Cafecito | Damián Catanzaro
 
 Cafecito es un proyecto hecho en Next.JS con Express.JS y MongoDB para recibir cafés ☕️ a modo de donaciones.
 
-**Demo:** Cafecito es un proyecto hecho en Next.JS con Express.JS y MongoDB para recibir cafés ☕️ a modo de donaciones.
+**Demo:** https://cafecito.damiancatanzaro.com/
 
 **Autor:** [@DamianCatanzaro](https://twitter.com/DamianCatanzaro)
 
