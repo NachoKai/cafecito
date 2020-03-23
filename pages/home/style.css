@@ -1,40 +1,46 @@
 .title,
 .titleDescription {
-  padding: 0 16px;
-  margin: 0;
-  font-weight: 500;
-  color: var(--textBlack);
+    padding: 0 20px;
+    margin: 0;
+    font-weight: bold;
+    color: var(--textBlack);
 }
 
 .titleDescription {
-  padding-top: 16px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .waitingCoffee {
-  padding: 16px;
+    padding: 16px;
 }
 
 .waitingCoffee span {
-  display: block;
-  background-color: var(--boxBackground);
-  color: var(--textBlack);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-  padding: 16px;
+    display: block;
+    background-color: var(--boxBackground);
+    color: var(--textBlack);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 16px;
 }
 
 @media only screen and (min-width: 768px) {
-  .title,
-  .titleDescription,
-  .waitingCoffee {
-    width: 700px;
-    margin: 0 auto;
-  }
-  .titleDescription {
-    margin-bottom: 16px;
-  }
-  .title {
-    margin-top: 16px;
-  }
+    .title,
+    .titleDescription,
+    .waitingCoffee {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .titleDescription {
+        padding-top: 20px;
+        margin-bottom: 5px;
+    }
+    .title {
+        padding-top: 20px;
+        margin-bottom: 5px;
+    }
 }

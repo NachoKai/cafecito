@@ -1,6 +1,7 @@
 .coffeeContainer {
     padding: 16px;
     padding-bottom: 0;
+    padding-top: 0px;
 
     &:last-of-type {
         padding-bottom: 16px;
@@ -8,7 +9,7 @@
 
     .coffee {
         background-color: var(--boxBackground);
-        border-radius: 6px;
+        border-radius: 4px;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
         padding: 16px;
         position: relative;
@@ -28,8 +29,7 @@
 
     .q {
         position: relative;
-        padding: 8px;
-        padding-left: 0;
+        padding: 10px;
 
         .name {
             padding-left: 16px;
@@ -108,7 +108,7 @@
     }
 
     @media only screen and (min-width: 768px) {
-        width: 700px;
+        width: 600px;
         margin: 0 auto;
     }
 }

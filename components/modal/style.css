@@ -1,54 +1,56 @@
 .modalAddEventContainer {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  width: 100%;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .modalAddEventContainer .modalContainer {
-  border-radius: 6px;
-  background-color: var(--boxBackground);
-  width: 100%;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background-color: var(--boxBackground);
+    width: 100%;
+    -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .modalAddEventContainer .modalContainer header {
-  color: var(--textBlack);
-  padding: 16px;
-  font-size: 18px;
-  background-color: var(--buttonBackground);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  position: relative;
-  border-radius: 6px 6px 0 0;
+    color: var(--textBlack);
+    padding: 16px;
+    font-size: 18px;
+    background-color: var(--buttonBackground);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 4px 4px 0 0;
 }
 
 .modalAddEventContainer .modalContainer header svg {
-  font-size: 20px;
-  padding: 16px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-  width: 15px;
+    font-size: 20px;
+    padding: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 15px;
 }
 
 .modalAddEventContainer .modalContainer .formContainer {
-  padding: 16px;
-  color: var(--textBlack);
+    padding: 16px;
+    color: var(--textBlack);
 }
 
 .modalAddEventContainer .modalContainer .formContainer img {
-  margin-top: 16px;
+    margin-top: 16px;
 }
 
 @media only screen and (min-width: 768px) {
-  .modalAddEventContainer {
-    width: 500px;
-    left: calc(50% - 250px);
-  }
+    .modalAddEventContainer {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
 }

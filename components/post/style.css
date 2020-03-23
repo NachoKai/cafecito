@@ -1,36 +1,40 @@
 .postContainer {
-  padding: 16px;
+    padding: 16px;
+    padding-top: 0px;
 }
 
 .postContainer .post {
-  background-color: var(--boxBackground);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  border-left: 4px solid #009ee3;
-  color: var(--textBlack);
+    background-color: var(--boxBackground);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    border-left: 4px solid #009ee3;
+    color: var(--textBlack);
 }
 
 .postContainer .post p {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 16px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
 }
 
 .postContainer .post p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .postContainer .post p a {
-  color: var(--textBlue);
-  text-decoration: none;
+    color: var(--textBlue);
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .postContainer {
-    padding: 0;
-    width: 700px;
-    margin: 0 auto;
-  }
+    .postContainer {
+        padding: 0;
+        width: 600px;
+        margin: 0 auto;
+        padding-top: 0px;
+    }
 }

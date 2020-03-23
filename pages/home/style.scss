@@ -1,13 +1,15 @@
 .title,
 .titleDescription {
-    padding: 0 16px;
+    padding: 0 20px;
     margin: 0;
-    font-weight: 500;
+    font-weight: bold;
     color: var(--textBlack);
 }
 
 .titleDescription {
-    padding-top: 16px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .waitingCoffee {
@@ -17,8 +19,9 @@
         display: block;
         background-color: var(--boxBackground);
         color: var(--textBlack);
-        border-radius: 6px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
         padding: 16px;
     }
 }
@@ -27,15 +30,17 @@
     .title,
     .titleDescription,
     .waitingCoffee {
-        width: 700px;
+        width: 600px;
         margin: 0 auto;
     }
 
     .titleDescription {
-        margin-bottom: 16px;
+        padding-top: 20px;
+        margin-bottom: 5px;
     }
 
     .title {
-        margin-top: 16px;
+        padding-top: 20px;
+        margin-bottom: 5px;
     }
 }

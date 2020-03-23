@@ -23,7 +23,7 @@ const Header = ({ countCoffees, prefersDark, isAdmin, ...props }) => {
                     <img src={PROFILE_PHOTO} alt="" />
                 </div>
                 <div className={style.informationContainer}>
-                    <div className={style.name}>{`@${TWITTER}`}</div>
+                    <div className={style.name}>{`Nacho Caiafa`}</div>
                     {isAdmin && (
                         <FontAwesomeIcon
                             icon={gearSolid}
@@ -35,7 +35,7 @@ const Header = ({ countCoffees, prefersDark, isAdmin, ...props }) => {
                         />
                     )}
                     <div className={style.countCoffees}>
-                        {countCoffees} cafecitos ☕️
+                        <strong>{countCoffees}</strong> cafecitos ☕️
                     </div>
                 </div>
 

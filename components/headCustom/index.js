@@ -29,7 +29,11 @@ const HeadCustom = ({ share }) => (
                 content={`${URL}/static/imagesCoffee/${share._id}.png`}
             />
         )}
-
+        <link
+            href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA+vr6ABk1XgDW1tYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzAAAAAAAxEREwAAAAAxERERMzAAAxEREREREwADERERERMRMAMRERERExEwAxEiIiETETADEiIiIhETAAAxERERMzAAAAMzMzMAAAAAAAAAAAAAAAAAAAIgAAAAAAAAIAAAAAAAAAACAAAAAAAAAAAgAAAAAAAAAgAAAADwfwAA4D8AAMAHAACAAwAAgAEAAIABAACAAQAAgAMAAMAHAADgPwAA//8AAP5/AAD9/wAA/v8AAP9/AAD+/wAA"
+            rel="icon"
+            type="image/x-icon"
+        />
         <meta property="og:type" content="website" />
         <meta name="robots" content="noodp" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -37,6 +41,10 @@ const HeadCustom = ({ share }) => (
         <meta
             property="twitter:title"
             content={`${FIRST_NAME} ${LAST_NAME} | Cafecito`}
+        />
+        <meta
+            name="description"
+            content="Cafecito es un proyecto hecho en Next.JS con Express.JS y MongoDB para recibir cafés a modo de donaciones."
         />
         <meta name="twitter:creator" content={`@${TWITTER}`} />
         <meta name="twitter:description" content="" />
@@ -52,7 +60,10 @@ const HeadCustom = ({ share }) => (
             itemProp="name"
             content={`${FIRST_NAME} ${LAST_NAME} | Cafecito`}
         />
-        <meta itemProp="description" content="" />
+        <meta
+            itemProp="description"
+            content="Cafecito es un proyecto hecho en Next.JS con Express.JS y MongoDB para recibir cafés a modo de donaciones."
+        />
 
         {share && share._id && (
             <meta

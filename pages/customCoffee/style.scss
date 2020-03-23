@@ -58,9 +58,9 @@
         margin-bottom: 0px;
         flex-direction: column;
         align-items: center;
-        width: 700px;
+        width: 600px;
         background-color: var(--boxBackground);
-        border-radius: 6px;
+        border-radius: 4px;
         padding: 140px 30px 20px 30px;
         box-sizing: border-box;
         box-shadow: 0px 3px 10px #00000010;
@@ -84,7 +84,7 @@
     text-align: center;
     color: var(--textBlack);
     background-color: var(--inputBackground);
-    border-radius: 6px;
+    border-radius: 4px;
     border: none;
     padding: 12px 0px;
     margin: 10px 0px;
@@ -115,7 +115,7 @@
     color: var(--buttonText);
     background-color: var(--buttonBackground);
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 8px 32px;
     margin-top: 10px;
     box-sizing: border-box;

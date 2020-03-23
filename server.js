@@ -21,11 +21,14 @@ if (process.env.DB_USER) {
 
 mongoose.set("useCreateIndex", true);
 
-mongoose.connect(urlMongo, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-});
+mongoose
+    .connect(urlMongo, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+    })
+    .then(() => console.log("MongoDB Connected..."))
+    .catch(err => console.log(err));
 
 const TelegramService = require("./server/services/TelegramService");
 const TelegramServiceInstance = new TelegramService();

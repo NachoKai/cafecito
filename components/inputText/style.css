@@ -1,207 +1,237 @@
 .inputText {
-  background-color: var(--boxBackground);
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  position: relative;
+    background-color: var(--boxBackground);
+    -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    position: relative;
 }
 
 .inputText span {
-  color: var(--textBlack);
+    color: var(--textBlack);
 }
 
 .inputText .loading button {
-  margin-top: 16px;
+    margin-top: 16px;
 }
 
 .inputText .containerInputCoffee {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .inputText .containerInputCoffee .imageCoffee {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: 10px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-right: 10px;
+    padding: 2px;
+    border-radius: 100%;
+    border: 2px solid #009ee3;
+    background: var(--inputBackground);
 }
 
 .inputText .containerInputCoffee .imageCoffee span {
-  position: absolute;
-  font-size: 10px;
-  margin: 0;
-  color: var(--textGray);
+    position: absolute;
+    font-size: 10px;
+    margin: 0;
+    color: #000000;
+    font-weight: bold;
 }
 
 .inputText .containerInputCoffee span {
-  display: block;
-  margin-right: 10px;
-  font-size: 18px;
-  color: gray;
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: gray;
 }
 
 .inputText .containerInputCoffee .selected {
-  background-color: var(--buttonBackground);
+    background-color: var(--buttonBackground);
 }
 
 .inputText .containerInputCoffee input {
-  margin: 0;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  font-size: 18px;
-  border-radius: 0;
+    margin: 0;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 0;
+    padding: 0;
 }
 
 .inputText .containerInputCoffee button {
-  margin: 0;
-  width: 40px;
-  height: 50px;
-  padding: 0;
-  background-color: transparent;
-  border: 1px solid var(--borderButton);
-  font-size: 20px;
-  border-radius: 0;
+    margin: 0;
+    width: 40px;
+    height: 50px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid var(--borderButton);
+    font-size: 20px;
+    border-radius: 0;
 }
 
 .inputText .containerInputCoffee .buttonCoffeesContainer {
-  position: absolute;
-  right: 16px;
+    position: absolute;
+    right: 16px;
 }
 
 .inputText .containerInputCoffee .buttonCoffeesContainer button:first-child {
-  border-right: 0;
-  border-radius: 5px 0 0 5px;
+    border-right: 0;
+    border-radius: 30px 0 0 30px;
 }
 
 .inputText .containerInputCoffee .buttonCoffeesContainer button:last-child {
-  border-left: 0;
-  border-radius: 0 5px 5px 0;
+    border-left: 0;
+    border-radius: 0 30px 30px 0;
 }
 
 .inputText .containerInputCoffee .countCoffeesContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .inputText .containerInputCoffee .countCoffeesContainer button {
-  width: 35px;
-  margin: 0;
-  border-radius: 0;
-  background-color: var(--buttonBackground);
-  border: 0;
+    width: 35px;
+    margin: 0;
+    border-radius: 0;
+    background-color: var(--buttonBackground);
+    border: 0;
 }
 
 .inputText .containerInputCoffee .countCoffeesContainer button:first-child {
-  border-radius: 5px 0 0 5px;
+    border-radius: 30px 0 0 30px;
 }
 
 .inputText .containerInputCoffee .countCoffeesContainer button:last-child {
-  border-radius: 0 5px 5px 0;
+    border-radius: 0 30px 30px 0;
 }
 
 .inputText input {
-  width: 100%;
-  border-radius: 4px;
-  background-color: var(--inputBackground);
-  border: 0;
-  font-size: 16px;
-  padding: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: var(--textBlack);
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--inputBackground);
+    border: 0;
+    font-size: 16px;
+    padding: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: var(--textBlack);
 }
 
 .inputText input::-webkit-input-placeholder {
-  color: #969696;
+    color: #969696;
 }
 
 .inputText input:-ms-input-placeholder {
-  color: #969696;
+    color: #969696;
 }
 
 .inputText input::-ms-input-placeholder {
-  color: #969696;
+    color: #969696;
 }
 
 .inputText input::placeholder {
-  color: #969696;
+    color: #969696;
 }
 
 .inputText textarea {
-  background-color: var(--inputBackground);
-  color: var(--textBlack);
-  border-radius: 4px;
-  border: 0;
-  width: 100%;
-  height: 100px;
-  font-size: 16px;
-  padding: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  max-width: 100%;
-  min-width: 100%;
+    background-color: var(--inputBackground);
+    color: var(--textBlack);
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    padding: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .inputText textarea::-webkit-input-placeholder {
-  color: #969696;
+    color: #969696;
 }
 
 .inputText textarea:-ms-input-placeholder {
-  color: #969696;
+    color: #969696;
 }
 
 .inputText textarea::-ms-input-placeholder {
-  color: #969696;
+    color: #969696;
 }
 
 .inputText textarea::placeholder {
-  color: #969696;
+    color: #969696;
 }
 
 .inputText button {
-  padding: 8px 32px;
-  font-size: 16px;
-  border: 0;
-  background-color: var(--buttonBackground);
-  color: var(--buttonText);
-  width: 100%;
-  border-radius: 4px;
-  margin-top: 8px;
-  cursor: pointer;
+    padding: 8px 32px;
+    font-size: 16px;
+    border: 0;
+    background-color: var(--buttonBackground);
+    color: var(--buttonText);
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.inputText button:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08),
+        0 2px 4px 0 rgba(50, 50, 93, 0.11);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08),
+        0 2px 4px 0 rgba(50, 50, 93, 0.11);
+}
+
+.inputText button:active {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .inputText {
-    width: 700px;
-    margin: 0 auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 6px;
-  }
-  .inputText .containerInputCoffee .buttonCoffeesContainer {
-    position: initial;
-    margin-left: 32px;
-  }
+    .inputText {
+        width: 600px;
+        margin: 0 auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    .inputText .containerInputCoffee .buttonCoffeesContainer {
+        position: initial;
+        margin-left: 32px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
-  .inputText .buttonCoffeesContainer {
-    display: none;
-  }
+    .inputText .buttonCoffeesContainer {
+        display: none;
+    }
 }

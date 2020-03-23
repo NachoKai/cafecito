@@ -13,11 +13,6 @@ const ThanksModal = ({ openModal, openModalCreateEvent }) => {
         >
             OMG! What!? Gracias por haberme ayudado! Lo valoro muchisimo! ❤️.
             Happy coding ✨.
-            <img
-                width="100%"
-                src="https://media2.giphy.com/media/vFKqnCdLPNOKc/giphy.gif"
-                alt=""
-            />
         </Modal>
     );
 };

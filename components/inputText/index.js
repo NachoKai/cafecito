@@ -35,7 +35,7 @@ const InputText = () => {
                 </div>
             ) : (
                 <>
-                    <span>¡Ayudame con un café ☕️!</span>
+                    <span>¡Ayudame con un café!</span>
 
                     <div className={style.containerInputCoffee}>
                         <div className={style.imageCoffee}>
@@ -55,7 +55,7 @@ const InputText = () => {
                                     if (countCoffees > 1) {
                                         setCountCoffees(
                                             preCountCoffees =>
-                                                preCountCoffees - 1
+                                                Number(preCountCoffees) - 1
                                         );
                                     }
                                 }}
@@ -75,7 +75,8 @@ const InputText = () => {
                             <button
                                 onClick={() => {
                                     setCountCoffees(
-                                        preCountCoffees => preCountCoffees + 1
+                                        preCountCoffees =>
+                                            Number(preCountCoffees) + 1
                                     );
                                 }}
                             >
