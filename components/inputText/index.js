@@ -64,7 +64,7 @@ const InputText = () => {
                             </button>
 
                             <input
-                                type="text"
+                                type="number"
                                 placeholder="1"
                                 value={countCoffees}
                                 onChange={e => {
