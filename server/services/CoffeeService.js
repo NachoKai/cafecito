@@ -20,9 +20,8 @@ class CoffeeService {
 
     saveCoffee = async data => {
         const coffee = new Coffee(data);
-
         const result = await coffee.save();
-
+        
         return result;
     };
 

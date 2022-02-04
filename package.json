@@ -9,11 +9,6 @@
         "lint": "eslint \"./**/*.js\"",
         "pretty:stage": "pretty-quick --stage"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run lint && npm run pretty:stage"
-        }
-    },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.27",
         "@fortawesome/free-brands-svg-icons": "^5.12.1",

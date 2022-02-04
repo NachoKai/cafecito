@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-
-import CoffePicker from "../../components/coffeePicker";
-
+import CoffeePicker from "../../components/coffeePicker";
 import { useTheme } from "../../hooks/useTheme";
-
 import styles from "./style.scss";
-
 import { sendCoffee } from "../../utils/api";
 import { cafeConfig } from "../../config";
 
@@ -15,112 +11,108 @@ const COFFEE_PRICE = 50;
 const API = { sendCoffee };
 
 const ProfileImg = ({ imgSrc }) => (
-    <div className={styles.profileImg}>
-        <img src={imgSrc} alt="profile-img" />
-    </div>
+  <div className={styles.profileImg}>
+    <img src={imgSrc} alt="profile-img" />
+  </div>
 );
 
 const RedirectIcon = ({ url }) => (
-    <a href={url} className={styles.redirect}>
-        <img src="/imgs/redirect-icon.svg" alt="redirect-icon" />
-    </a>
+  <a href={url} className={styles.redirect}>
+    <img src="/imgs/redirect-icon.svg" alt="redirect-icon" />
+  </a>
 );
 
 const CustomCoffee = ({ title, description, message }) => {
-    useTheme();
-    const [state, setState] = useState({
-        name: "",
-        countCoffees: 1,
-        loading: false,
+  useTheme();
+  const [state, setState] = useState({
+    name: "",
+    countCoffees: 1,
+    loading: false,
+  });
+
+  const sendCoffee = async () => {
+    const { name, countCoffees } = state;
+
+    setState({
+      ...state,
+      loading: true,
     });
 
-    const sendCoffee = async () => {
-        const { name, countCoffees } = state;
+    const { mercadoPagoLink } = await API.sendCoffee({
+      name,
+      message,
+      countCoffees,
+    });
 
-        setState({
-            ...state,
-            loading: true,
-        });
+    window.location.href = mercadoPagoLink;
+  };
 
-        const { mercadoPagoLink } = await API.sendCoffee({
-            name,
-            message,
-            countCoffees,
-        });
+  const setCount = value => {
+    setState({
+      ...state,
+      countCoffees: value < 1 ? 1 : value,
+    });
+  };
 
-        window.location.href = mercadoPagoLink;
-    };
+  const handleFormChange = e => {
+    setState({
+      ...state,
+      name: e.target.value,
+    });
+  };
 
-    const setCount = value => {
-        setState({
-            ...state,
-            countCoffees: value < 1 ? 1 : value,
-        });
-    };
+  const { countCoffees, name } = state;
 
-    const handleFormChange = e => {
-        setState({
-            ...state,
-            name: e.target.value,
-        });
-    };
+  return (
+    <div className={styles.main}>
+      <div className={styles.modalContainer}>
+        <ProfileImg imgSrc={PROFILE_PHOTO} />
 
-    const { countCoffees, name } = state;
+        <div className={styles.contentContainer}>
+          <RedirectIcon url="/" />
 
-    return (
-        <div className={styles.main}>
-            <div className={styles.modalContainer}>
-                <ProfileImg imgSrc={PROFILE_PHOTO} />
+          <h1 className={styles.title}>{title}</h1>
+          <h3 className={styles.description}>{description}</h3>
 
-                <div className={styles.contentContainer}>
-                    <RedirectIcon url="/" />
+          <CoffeePicker countCoffees={countCoffees} setCount={setCount} />
 
-                    <h1 className={styles.title}>{title}</h1>
-                    <h3 className={styles.description}>{description}</h3>
-
-                    <CoffePicker
-                        countCoffees={countCoffees}
-                        setCount={setCount}
-                    />
-
-                    <input
-                        className={styles.input}
-                        placeholder="Nombre o @Twitter (opcional)"
-                        value={name}
-                        onChange={handleFormChange}
-                        type="text"
-                    />
-                    <button className={styles.submit} onClick={sendCoffee}>
-                        Invitame {countCoffees}{" "}
-                        {countCoffees > 1 ? "cafés" : "café"} ($
-                        {countCoffees * COFFEE_PRICE})
-                    </button>
-                </div>
-            </div>
+          <input
+            className={styles.input}
+            placeholder="Nombre o @Twitter (opcional)"
+            value={name}
+            onChange={handleFormChange}
+            type="text"
+          />
+          <button className={styles.submit} onClick={sendCoffee}>
+            Invitame {countCoffees} {countCoffees > 1 ? "cafés" : "café"} ($
+            {countCoffees * COFFEE_PRICE})
+          </button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 CustomCoffee.getInitialProps = async ({ query }) => {
-    const title = query.title || "";
-    const description = query.description || "";
-    const message = query.message || "";
+  const title = query.title || "";
+  const description = query.description || "";
+  const message = query.message || "";
 
-    return { title, description, message };
+  return { title, description, message };
 };
 
 ProfileImg.propTypes = {
-    imgSrc: PropTypes.string,
+  imgSrc: PropTypes.string,
 };
 
 RedirectIcon.propTypes = {
-    url: PropTypes.string,
+  url: PropTypes.string,
 };
 
 CustomCoffee.propTypes = {
-    title: PropTypes.string,
-    description: PropTypes.string,
-    message: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  message: PropTypes.string,
 };
 
 export default CustomCoffee;
